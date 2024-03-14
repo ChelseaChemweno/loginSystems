@@ -3,7 +3,7 @@ A session is a data structure that stores users information .The session will be
 
 Summary of why sessions are needed :-
 
-a)User Identification - A session is important in user identofication as it enables the server identify individual users by assigning a unique session identifier usually in the form of cookies
+a)User Identification - A session is important in user identofication as it enables the server identify individual users by assigning a unique session identifier usually in the form of cookies.
 
 b)Data Persitence -It allows the persistance of users data across multiple requests .This means that information such as user prefernces ,login status ,shopping cart can be stored in the server and accesed as needed throughout the users interaction with the website .
 

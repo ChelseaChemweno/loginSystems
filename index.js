@@ -28,21 +28,22 @@ myConnection.query(
 const app = express();
 app.get("/", (req, res) => {
   console.log(req.baseUrl);
-  res.send("Hello there! home route/page");
+  res.render("index.ejs");
 });
-app.get("/login", (res, req) => {
+app.get("/login", (req, res) => {
   // Recieve data
   //Compare credentials with what is in the database
   //if the password math --- create a session
-  res.send("login page");
+  res.render("login.ejs");
 });
-app.get("/Signup", (res, req) => {
-  //Recieve data
+app.get("/Signup", (req, res) => {
+  //Recieve data from the client or the frontend
+
   //Input Validation
   //Hash the password
   //Save data in the database
   console.log(req.path);
-  res.send("Sign up page");
+  res.render("signup.ejs");
 });
 app.get("/protectecRouteOne", (req, res) => {
   res.send("Only for logged in users");
@@ -61,5 +62,4 @@ app.listen(5000, () => {
   console.log("Server is running on port 5000");
 });
 //npm run dev ( to let the server continue runing )
-//what are seessions and why we need sessiions
-// what does it mean to say HTTP stateless
+//Dbeaver -  A   database plugin in that will show you the etity relationship diaghram between the different tables
